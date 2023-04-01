@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 export interface PeriodicElement {
   name: string;
   position: number;
   weight: number;
   symbol: string;
 }
+
 const ELEMENT_DATA: PeriodicElement[] = [
   { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
   { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
@@ -18,16 +18,17 @@ const ELEMENT_DATA: PeriodicElement[] = [
   { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
   { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
 ];
-
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'app-best-quality',
+  templateUrl: './best-quality.component.html',
+  styleUrls: ['./best-quality.component.css'],
 })
-export class AppComponent {
-  
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+export class BestQualityComponent {
+  displayedColumns: string[] = [
+    'demo-position',
+    'demo-name',
+    'demo-weight',
+    'demo-symbol',
+  ];
   dataSource = ELEMENT_DATA;
-  constructor(private route:Router){}
-
 }

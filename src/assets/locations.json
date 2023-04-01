@@ -1,0 +1,34 @@
+[
+  {
+    "locationName": "ANGELES, PAMPANGA",
+    "imgPath": "../../assets/location1.jpg"
+  },
+  {
+    "locationName": "METRO MANILA",
+    "imgPath": "../../assets/location2.jpg"
+  },
+  {
+    "locationName": "CAVITE, TAGAYTAY",
+    "imgPath": "../../assets/location3.jpg"
+  },
+  {
+    "locationName": "SAN FERNANDO, PAMPANGA",
+    "imgPath": "../../assets/location4.jpg"
+  },
+  {
+    "locationName": "CALAMBA, LAGUNA",
+    "imgPath": "../../assets/location5.jpg"
+  },
+  {
+    "locationName": "VIGAN, ILOCOS SUR",
+    "imgPath": "../../assets/location6.jpg"
+  },
+  {
+    "locationName": "BAGUIO, BENGUET",
+    "imgPath": "../../assets/location7.jpg"
+  },
+  {
+    "locationName": "SURIGAO, SURIGAO DEL NORTE",
+    "imgPath": "../../assets/location8.jpg"
+  }
+]

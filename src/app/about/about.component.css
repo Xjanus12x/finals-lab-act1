@@ -1,0 +1,23 @@
+.grid-container {
+  min-height: 100vh;
+  min-height: 100svh;
+  place-content: center;
+}
+.container {
+  padding: 3rem;
+  box-shadow: -23px 29px 24px -11px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -23px 29px 24px -11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -23px 29px 24px -11px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  background-color: #0b1b76;
+  color: var(--white);
+  gap: var(--size1);
+}
+.container h2 {
+  font-family: var(--alata-font);
+  font-size: 5rem;
+}
+.container p {
+  font-size: 1.5rem;
+  color: var(--dark-gray);
+}

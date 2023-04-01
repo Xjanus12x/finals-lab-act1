@@ -1,0 +1,40 @@
+<div class="bg-container d-grid" data-size="large">
+    <nav class="nav">
+        <ul class="nav__items d-flex a-center first-nav">
+            <li class="logo" (click)="goToRoute('')"><img src="../../assets/logo.png" alt=""></li>
+            <li class="push-right" (click)="goToRoute('/home')" (click)="setTitle('Creativity Is Always On Our Menu.')">
+                Home</li>
+            <li (click)="goToRoute('/about')" (click)="setTitle('ABOUT RESTAURANT BAR & LOUNGE')">About</li>
+            <li (click)="goToRoute('/restaurant-list')" (click)="hideTitle()">Restaurant List</li>
+            <li (click)="goToRoute('/best-quality')">Best Quality</li>
+        </ul>
+        <button type="button" class="hamburger" mat-button (click)="drawer.toggle()">
+            Open Nav
+        </button>
+
+
+
+    </nav>
+
+    <h1 *ngIf="isVisible" class="title">{{title}}</h1>
+</div>
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+
+
+        <ul class="nav__items d-flex a-center">
+            <li><button type="button" class="hamburger" mat-button (click)="drawer.toggle()">
+                    Close Nav
+                </button></li>
+            <li class="push-right" (click)="goToRoute('/home')" (click)="setTitle('Creativity Is Always On Our Menu.')">
+                Home</li>
+            <li (click)="goToRoute('/about')" (click)="setTitle('ABOUT RESTAURANT BAR & LOUNGE')">About</li>
+            <li (click)="goToRoute('/restaurant-list')" (click)="hideTitle()">Restaurant List</li>
+            <li (click)="goToRoute('/best-quality')">Best Quality</li>
+
+        </ul>
+
+    </mat-drawer>
+
+</mat-drawer-container>

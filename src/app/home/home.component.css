@@ -1,0 +1,37 @@
+.card {
+  max-width: 40rem;
+}
+
+.header {
+  background-size: cover;
+  background-position: center;
+}
+.header[data-position="ceo"] {
+  background-image: url("http://blog-upload.s3-us-west-1.amazonaws.com/wp-content/uploads/2016/03/28054613/Akbars-Restaurant-Owner-Shabir-Hussain-2.jpg");
+}
+.header[data-position="co-founder"] {
+  background-image: url(https://www.europeanceo.com/wp-content/uploads/2017/08/CEO-magic-touch.jpg);
+}
+.card-content {
+  padding: 1rem;
+}
+.button-container {
+  gap: var(--size1);
+}
+
+.divider {
+  justify-content: space-around;
+}
+.grid-container {
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--size2);
+  padding: var(--size5);
+  text-align: center;
+}
+.grid-container section > img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1/ 1;
+  border-radius: 5px;
+}

@@ -1,0 +1,83 @@
+<mat-grid-list cols="2" [gutterSize]="'1rem'">
+    <mat-grid-tile>
+        <mat-card class="card">
+            <mat-card-header>
+                <div mat-card-avatar class="header" data-position="ceo"></div>
+                <mat-card-title>Jax Vandal</mat-card-title>
+                <mat-card-subtitle>THE CEO OF RESTAURANT BAR & LOUNGE</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image
+                src="http://blog-upload.s3-us-west-1.amazonaws.com/wp-content/uploads/2016/03/28054613/Akbars-Restaurant-Owner-Shabir-Hussain-2.jpg"
+                alt="
+                    Photo of a Shiba Inu">
+            <mat-card-content class="card-content">
+
+                <p>
+                    Founded in 2011, Restaurant Bar & Lounge has a Top quality of serving world-class wines with
+                    luxurious
+                    dishes on their
+                    menu. Enjoy our fine dining using our world-class recipe with your friends, relatives or love ones.
+                    Fun
+                    activities such
+                    as pool and karaoke to strengthen your bonds.
+                </p>
+            </mat-card-content>
+            <mat-card-actions class="button-container d-flex">
+                <button mat-raised-button color="primary">Like</button>
+                <button mat-raised-button color="accent">Share</button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="card">
+            <mat-card-header>
+                <div mat-card-avatar class="header" data-position="co-founder"></div>
+                <mat-card-title>Cid kagenou</mat-card-title>
+                <mat-card-subtitle>Co-Founder</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://www.europeanceo.com/wp-content/uploads/2017/08/CEO-magic-touch.jpg" alt="
+                            Photo of a Shiba Inu">
+            <mat-card-content class="card-content">
+
+                <p>
+                    Founded in 2008, the co-founder's startup company offers innovative software solutions with
+                    cutting-edge
+                    technology,
+                    providing exceptional value to clients around the world. Collaborate with our team to enhance your
+                    business processes
+                    and achieve your goals with ease. Engage in team-building activities and workshops to foster a
+                    cohesive
+                    and productive
+                    working environment.
+                </p>
+            </mat-card-content>
+            <mat-card-actions class="button-container d-flex">
+                <button mat-raised-button color="primary">Like</button>
+                <button mat-raised-button color="accent">Share</button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+
+</mat-grid-list>
+
+<section class="divider bg-container d-flex" data-size="small">
+    <h2>OUR LOCATIONS</h2>
+    <button class="button" data-outline="true">SEE ALL</button>
+</section>
+
+<!-- <mat-grid-list cols="4" [gutterSize]="'1rem'">
+    <mat-grid-tile *ngFor="let location of locations">
+        <section class="content-container">
+         
+        </section>
+
+    </mat-grid-tile>
+
+</mat-grid-list> -->
+
+<section class="grid-container d-grid">
+    <section *ngFor="let location of locations">
+        <img [src]="location.imgPath" alt="">
+        <h1>{{location.locationName}}</h1>
+    </section>
+</section>

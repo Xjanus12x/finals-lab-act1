@@ -1,1 +1,161 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css);
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+/* CSS */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+:root {
+  /*colors  */
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 55%);
+  --very-dark-Gray: hsl(0, 0%, 41%);
+
+  /* size */
+  --min-fsize: 7.5rem;
+  --ideal-fsize: 8vw;
+  --max-fsize: 1rem;
+
+  /* font styles */
+  --alata-font: "Alata", sans-serif;
+  --josefin-sans-font: "Josefin Sans", sans-serif;
+
+  --size1: 1rem;
+  --size2: 1.5rem;
+  --size3: 2rem;
+  --size4: 2.5rem;
+  --size5: 3rem;
+  --size6: 3.5rem;
+  --size7: 4rem;
+  --size8: 4.5rem;
+  --size9: 5rem;
+  --size10: 5.5rem;
+}
+/* Utility Class */
+.d-flex {
+  display: flex;
+}
+.d-grid {
+  display: grid;
+}
+.j-center {
+  justify-content: center;
+}
+.a-center {
+  align-items: center;
+}
+.push-right {
+  margin-left: auto;
+}
+.logo {
+  max-width: max(15%, 10rem);
+}
+.bg-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./assets/peakpx.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--white);
+
+  place-items: center;
+}
+.bg-container[data-size="small"] {
+  padding: var(--size5);
+  background-position: top;
+}
+.bg-container[data-size="large"] {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+.button {
+  padding: 0.4rem 1.5rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+.button[data-outline="true"] {
+  outline: 2px var(--white) solid;
+  color: white;
+  letter-spacing: 0.2rem;
+}
+/* Global Block Styling */
+body {
+  font-family: var(--alata-font);
+}

@@ -1,0 +1,29 @@
+<table mat-table [dataSource]="comments" class="mat-elevation-z8 demo-table">
+
+    <ng-container matColumnDef="postId">
+        <th mat-header-cell *matHeaderCellDef>Post ID</th>
+        <td mat-cell *matCellDef="let comment">{{ comment.postId }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>ID</th>
+        <td mat-cell *matCellDef="let comment">{{ comment.id }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <td mat-cell *matCellDef="let comment">{{ comment.name }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef>Email</th>
+        <td mat-cell *matCellDef="let comment">{{ comment.email }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="body">
+        <th mat-header-cell *matHeaderCellDef>Body</th>
+        <td mat-cell *matCellDef="let comment">{{ comment.body }}</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="['postId', 'id', 'name', 'email', 'body']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['postId', 'id', 'name', 'email', 'body']"></tr>
+</table>
